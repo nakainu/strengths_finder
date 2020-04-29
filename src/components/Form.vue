@@ -98,6 +98,7 @@
             }
             }).then( response => {
                 console.log(response.data);
+                alert(this.form.name + 'さんを登録しました');
             });
         }
     }
