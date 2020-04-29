@@ -1,8 +1,22 @@
 <template>
   <div id="app">
+
+    <div>
+      <b-navbar toggleable="lg" type="dark" variant="info">
+        <b-navbar-brand href="#">Handslab Strengths Finder</b-navbar-brand>
+        <b-navbar-nav class="ml-auto">
+          <b-nav-form>
+            <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
+            <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
+          </b-nav-form>
+        </b-navbar-nav>
+      </b-navbar>
+    </div>
+
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">リスト</router-link> |
+      <router-link to="/create">新規追加</router-link>
+
     </div>
     <router-view/>
   </div>
@@ -19,6 +33,7 @@
 
 #nav {
   padding: 30px;
+  text-align: center;
 }
 
 #nav a {

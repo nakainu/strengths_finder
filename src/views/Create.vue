@@ -1,19 +1,19 @@
 <template>
-  <div class="about">
+  <div class="create">
     <b-container>
-      <List/>
+      <Form/>
     </b-container>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import List from '@/components/List.vue'
+import Form from '@/components/Form.vue'
 
 export default {
-  name: 'Home',
+  name: 'Create',
   components: {
-    List
+    Form
   }
 }
 </script>
