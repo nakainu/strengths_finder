@@ -1,6 +1,8 @@
 <template>
   <div>
-    <b-table striped hover :items="items"></b-table>
+    <b-container>
+        <b-table striped hover :items="items"></b-table>
+    </b-container>
   </div>
 </template>
 
