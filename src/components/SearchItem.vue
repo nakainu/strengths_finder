@@ -1,10 +1,9 @@
 <template>
   <div>
-    <b-form-input v-model="text" @keydown.enter="filterStrength" placeholder="ストレングスのキーワードを入力してください"></b-form-input>
-
-
-    <b-table striped hover :items="filter_items"></b-table>
-    
+    <b-form-input class="form" v-model="text" @keydown.enter="filterStrength" placeholder="ストレングスのキーワードを入力してください"></b-form-input>
+    <b-container class="container">
+      <b-table striped hover :items="filter_items"></b-table>
+    </b-container>
   </div>
 </template>
 
@@ -39,7 +38,10 @@ export default {
 
 <style scoped>
 .form {
-    width: 500px;
-
+    margin: 10px auto;
+    width: 50%;
+}
+.container {
+    padding: 5% 0;
 }
 </style>
