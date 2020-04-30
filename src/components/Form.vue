@@ -87,7 +87,7 @@
     methods: {
       async insert(evt) {
         evt.preventDefault()
-        const url = 'https://sheetdb.io/api/v1/org6l4fy7fwm9'
+        const url = 'https://sheetdb.io/api/v1/3snlhppfxzhqj'
         this.axios.post(
             url, {"data": {
                 "team": this.form.team,
