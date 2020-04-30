@@ -14,7 +14,7 @@ export default {
         }
     },
     created() {
-        this.axios.get('https://sheetdb.io/api/v1/org6l4fy7fwm9')
+        this.axios.get('https://sheetdb.io/api/v1/3snlhppfxzhqj')
         .then( response => {
             this.items = response.data;
         });
